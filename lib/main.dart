@@ -1,20 +1,10 @@
-import 'dart:ui';
-
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:once/Auth/login_screen.dart';
-import 'package:once/AuthFlutterFire/signin_screen.dart';
 import 'package:once/Navbar/navbarr.dart';
 import 'package:once/landing%20Page/landing_page.dart';
 import 'package:once/onboardingscreen/onboarding.dart';
-import 'package:once/screens/library_nosubcription_screen/library_nosubcription_screen.dart';
-import 'package:once/screens/tab_marketplace/tab_marketplace.dart';
-import 'package:once/screens/tab_quotes_screen/tab_quotes.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:once/splash/splash_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
