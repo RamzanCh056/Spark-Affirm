@@ -6,6 +6,7 @@ import 'package:once/screens/common/custom_tile.dart';
 import 'package:once/screens/profile_screen/adminDashboard/users_data.dart';
 
 import '../constant.dart';
+import '../user_management/user_management.dart';
 
 class AdminDashboard extends StatelessWidget {
   const AdminDashboard({Key? key}) : super(key: key);
@@ -92,44 +93,54 @@ class AdminDashboard extends StatelessWidget {
             ),
             ListTile(
               onTap: () {
-                Get.to(UsersData());
+               // Get.to(UsersData());
+                Get.to( UserManagement());
+
               },
               leading: Icon(
                 Icons.person_outline,
                 size: 40,
                 color: Colors.grey.shade700,
               ),
-              title: Text('Users'),
+              title: Text('Users managment'),
             ),
             CustomTile(
+              trailing: "",
               title: 'Global App Values',
               image: 'images/globel.svg',
             ),
             CustomTile(
+              trailing: "",
               title: 'Quote Types',
               image: 'images/quote.svg',
             ),
             CustomTile(
+              trailing: "",
               title: 'Linked Content Types',
               image: 'images/Heart empty.svg',
             ),
             CustomTile(
+              trailing: "",
               title: 'Categories',
               image: 'images/cati.svg',
             ),
             CustomTile(
+              trailing: "",
               title: 'Themes',
               image: 'images/theme.svg',
             ),
             CustomTile(
+              trailing: "",
               title: 'Sounds',
               image: 'images/sound.svg',
             ),
             CustomTile(
+              trailing: "",
               title: 'SoundScapes',
               image: 'images/soundscap.svg',
             ),
             CustomTile(
+              trailing: "",
               title: 'Quotes',
               image: 'images/quo.svg',
             ),
