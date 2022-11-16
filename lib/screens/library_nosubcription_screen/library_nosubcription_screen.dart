@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:once/screens/becamecreator/user_management.dart';
 import 'package:once/screens/picker_categories/picker_categories.dart';
 import 'package:once/screens/profile_screen/about.dart';
 import 'package:once/screens/profile_screen/account.dart';
@@ -508,6 +509,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                     CustomTile(
                       title: "Account",
                       image: 'images/user.svg',
+                      trailing: "",
                       onTap: () {
                         Get.to(() => Account(),
                             duration: Duration(milliseconds: 300),
@@ -517,6 +519,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                     CustomTile(
                       title: "Notification",
                       image: 'images/notifications.svg',
+                      trailing: "",
                       onTap: () {
                         Get.to(() => NotificationScreen(),
                             duration: Duration(milliseconds: 300),
@@ -526,6 +529,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                     CustomTile(
                       title: "Widgets ",
                       image: 'images/widgets.svg',
+                      trailing: "",
                       onTap: () {
                         Get.to(() => WidgetScreen(),
                             duration: Duration(milliseconds: 300),
@@ -535,6 +539,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                     CustomTile(
                       title: "Content Settings ",
                       image: 'images/content.svg',
+                      trailing: "",
                       onTap: () {
                         Get.to(() => ContentSetting(),
                             duration: Duration(milliseconds: 300),
@@ -544,6 +549,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                     CustomTile(
                       title: "General Settings ",
                       image: 'images/set.svg',
+                      trailing: "",
                       onTap: () {
                         Get.to(() => GeneralSetting(),
                             duration: Duration(milliseconds: 300),
@@ -553,6 +559,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                     CustomTile(
                       title: "Help",
                       image: 'images/help.svg',
+                      trailing: "",
                       onTap: () {
                         Get.to(() => Help(),
                             duration: Duration(milliseconds: 300),
@@ -562,8 +569,10 @@ class _LibraryScreenState extends State<LibraryScreen> {
                     CustomTile(
                       title: "Become a Creator",
                       image: 'images/creator.svg',
+                      trailing: "",
                       onTap: () {
-                        Get.to(() => BecomeCreator(),
+
+                        Get.to(() => BecameCreator(),
                             duration: Duration(milliseconds: 300),
                             transition: Transition.rightToLeft);
                       },
@@ -571,12 +580,15 @@ class _LibraryScreenState extends State<LibraryScreen> {
                     CustomTile(
                       title: "About",
                       image: 'images/about.svg',
+                      trailing: "V 0.115",
                       onTap: () {
                         Get.to(About(),
                             duration: Duration(milliseconds: 300),
                             transition: Transition.rightToLeft);
                       },
+
                     ),
+
                     ListTile(
                         leading: Icon(
                           Icons.logout,
@@ -682,6 +694,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                       height: 10,
                     ),
                     CustomTile(
+                      trailing: "",
                       title: "Creator Dashboard ",
                       image: 'images/cdash.svg',
                       onTap: () {
@@ -690,6 +703,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                       },
                     ),
                     CustomTile(
+                      trailing: "",
                       title: "Admin Dashboard",
                       image: 'images/adash.svg',
                       onTap: () {

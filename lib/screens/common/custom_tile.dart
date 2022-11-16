@@ -4,9 +4,10 @@ import 'package:once/screens/constant.dart';
 class CustomTile extends StatelessWidget {
   final String ? image;
   final String ? title;
+  String? trailing;
   final VoidCallback ? onTap;
-  const CustomTile({
-    Key? key, this.image, this.title, this.onTap,
+   CustomTile({
+    Key? key, this.image, this.title, this.onTap,this.trailing
   }) : super(key: key);
 
   @override
@@ -17,13 +18,11 @@ class CustomTile extends StatelessWidget {
         onTap: onTap,
         child: Row(
           children: [
-            Expanded(
-                flex: 1,
-                child: SvgPicture.asset(image!,height: 20,width: 20,)),
+            SvgPicture.asset(image!,height: 20,width: 20,),
             SizedBox(width: 20,),
-            Expanded(
-              flex: 10,
-                child: Text(title!,style: TextStyle(fontWeight: FontWeight.w400,color: blackColor),))
+           Expanded(child: Text(title!,style: TextStyle(fontWeight: FontWeight.w400,color: blackColor),)),
+           Text(trailing!,style: TextStyle(fontWeight: FontWeight.w400,color: blackColor),),
+
           ],
         ),
       ),
